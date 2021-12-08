@@ -1,3 +1,27 @@
+# INTRODUCE :computer::envelope:
+THIS IS A WEB FOR TESTING FIREBASE CLOUD MESSAGING(FCM).<br>
+IT'S A FRONTEND PART, BACKEND PART IS IN [fcm_notification](https://github.com/siaochanwu/fcm_notification) REPO.<br>
+OUR MESSAGE IS SEND FROM BACKEND.<br>
+WHEN YOU OPEN THIS PAGE, YOUR BROWSER WILL SEND A TOKEN TO ME, I'LL SAVE THIS TOKEN TO FIRESTORE.<br>
+BY THE WAY, WE NEED YOU TO AGREE BROWSER SEND YOU NOTIFICATIONS!!<br>
+
+# HOW TO TRY :question:
+BECAUSE I'TS A BACKGROUD MESSAGE, SO IT NEED REGISTER SERVICE WORKER.<br>
+BUT SW FILE HAS SECRATE INFO, SO YOU CAN CHANGE TO YOUR OWN FIREBASE INFO.<br>
+STEP:
+1. `npm i`
+2. CREATE A `.env` FILE AND REPLACE BELOW TO YOUR PRIVATE INFO :
+- REACT_APP_VAPID_KEY
+- REACT_APP_apiKey
+- REACT_APP_authDomain
+- REACT_APP_projectId
+- REACT_APP_storageBucket
+- REACT_APP_messagingSenderId
+- REACT_APP_appId
+- REACT_APP_measurementId
+3. ADD A `firebase-messaging-sw.js` UNDER PUBLIC FOLDER
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
