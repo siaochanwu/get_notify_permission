@@ -17,7 +17,7 @@ const Notification = (props) => {
         tokenFunc()
     }, [setTokenFound]);
     return (
-        (isTokenFound ? <p>Get Token Done!</p>: <p>Fail to Get Permission</p> )
+        (isTokenFound ? <p>Get Token Done!</p>: <p>Fail to Get Permission</p>)
     )
 }
 export default Notification;

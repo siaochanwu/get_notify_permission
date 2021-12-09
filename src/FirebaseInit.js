@@ -15,7 +15,6 @@ firebase.initializeApp(firebaseConfig);
 
 const messaging = firebase.messaging();
 const db = firebase.firestore();
-
 const publicKey = process.env.REACT_APP_VAPID_KEY;
 const userRef = db.collection('fcm');
 
@@ -45,3 +44,11 @@ export const getToken = async (setTokenFound) => {
     }
     return currentToken;
   };
+
+  export const onMessageListener = () =>
+  new Promise((resolve) => {
+    messaging.onMessage((payload) => {
+      resolve(payload);
+    });
+});
+
